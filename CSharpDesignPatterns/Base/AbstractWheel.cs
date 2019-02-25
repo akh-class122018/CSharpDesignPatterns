@@ -26,5 +26,9 @@ namespace CSharpDesignPatterns
             this._size = size;
             this._isWide = isWide;
         }
+        public override string ToString()
+        {
+            return this.GetType().Name + " With a wheel size of " + _size + " inches";
+        }
     }
 }

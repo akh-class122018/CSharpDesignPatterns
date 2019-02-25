@@ -9,6 +9,7 @@ namespace CSharpDesignPatterns
     public abstract class AbstractRoadBike : AbstractBike
 
     {
+        public override decimal Price { get; } = 540.00m;
 
         public AbstractRoadBike(IWheel wheel) : this(BikeColor.Chrome, wheel)
         {

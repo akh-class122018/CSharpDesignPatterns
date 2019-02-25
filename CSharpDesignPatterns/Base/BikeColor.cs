@@ -8,6 +8,6 @@ namespace CSharpDesignPatterns
 {
     public enum BikeColor
     {
-        Chrome, Black, Red, Green, Blue, Gold, Pink, Purple, Yellow, Beige
+        Chrome, Black, Red, Green, Blue, Pink, Purple, Yellow, Beige
     }
 }
