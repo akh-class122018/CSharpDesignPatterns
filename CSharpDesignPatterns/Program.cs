@@ -12,6 +12,7 @@ using Decorator;
 using Facade;
 using Iterator;
 using Observer;
+using Visitor;
 
 namespace CSharpDesignPatterns
 {
@@ -19,7 +20,9 @@ namespace CSharpDesignPatterns
     {
         static void Main(string[] args)
         {
-            ObserverPatternDemo();
+            VisitorpatternDemo();
+
+            //ObserverPatternDemo();
 
             //IteratorPatternDemo();
             Console.WriteLine(" ");
@@ -39,6 +42,12 @@ namespace CSharpDesignPatterns
 
         }
 
+        private static void VisitorpatternDemo()
+        {
+            IWheel wheel = new NarrowWheel(24);
+            wheel.AcceptVisitor(new WheelDiagnostics());
+            wheel.AcceptVisitor(new WheelInventory());
+        }
         private static void ObserverPatternDemo()
         {
             Speedometer mySpeedometer = new Speedometer();
